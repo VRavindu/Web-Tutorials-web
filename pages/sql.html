@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Tutorial</title>
+    <link rel="stylesheet" href="/css/stylesheet.css">
+</head>
+<body>
+    
+    <!-- -----------------------Heading----------------------- -->
+    <div class="heading-bar">
+        <ul>
+            <li><a href="java.html" class="hpg" title="Java">JAVA</a></li>
+            <li><a href="sql.html" class="hpg" title="Sql" style="color: red;">SQL</a></li>
+            <li><a href="html.html" class="hpg" title="Html">HTML</a></li>
+            <li><a href="css.html" class="hpg" title="Css">CSS</a></li>
+            <li><a href="javascript.html" class="hpg" title="JavaScript">JAVASCRIPT</a></li>
+            <li><a href="python.html" class="hpg" title="Python">PYTHON</a></li>
+            <li><a href="c++.html" class="hpg" title="C++">C++</a></li>
+            <li><a href="php.html" class="hpg" title="PHP" >PHP</a></li>
+            <li><a href="/index.html" class="hpg"> HOME</a></li>
+            <img src="/assets/icons/bars.svg" style="width: 25px;">
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="table">
+            <h1>What is SQL ?</h1>
+            <hr>
+            <p>SQL (Structured Query Language) is a language to operate databases; 
+                it includes Database Creation, Database Deletion, Fetching Data Rows, 
+                Modifying & Deleting Data rows, etc.</p>
+            <p>SQL stands for Structured Query Language which is a computer language 
+                for storing, manipulating and retrieving data stored in a 
+                relational database. <br>SQL was developed in the 1970s by IBM 
+                Computer Scientists and became a standard of the American National 
+                Standards Institute (ANSI) in 1986, and the International 
+                Organization for Standardization (ISO) in 1987.</p>
+
+            <h3>Why Use SQL?</h3>
+            <ul>
+                <li>Allows users to access data in the relational database management systems</li>
+                <li>Allows users to describe the data.</li>
+                <li>Allows users to define the data in a database and manipulate that data.</li>
+                <li>Allows to embed within other languages using SQL modules, libraries & pre-compilers.</li>
+                <li>Allows users to create and drop databases and tables.</li>
+                <li>Allows users to create view, stored procedure, functions in a database.</li>
+                <li>Allows users to set permissions on tables, procedures and views.</li>
+            </ul>
+        
+            <h1>Java Operators</h1>
+                <hr>
+            <div><ul>
+                <li>Arithmetic Operators</li>
+                <li>Comparison Operators</li>
+                <li>Logical Operators</li>
+            </ul></div>
+
+            <div>
+                <div>
+                    <h3>Arithmetic Operators</h3>
+                    <p>SQL Arithmetic Operators are used to perform mathematical operations on the numerical values. 
+                        SQL provides following operators to perform mathematical operations.</p>
+
+                        <table border="1">
+                            <thead>
+                                <tr>
+                                    <th>Operator</th>
+                                    <th>Description</th>
+                                    <th>Example</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>+</td>
+                                    <td>Addition</td>
+                                    <td>10 + 20 = 30</td>
+                                </tr>
+                                <tr>
+                                    <td>-</td>
+                                    <td>Subtraction</td>
+                                    <td>20 - 30 = -10</td>
+                                </tr>
+                                <tr>
+                                    <td>*</td>
+                                    <td>Multiplication</td>
+                                    <td>10 * 20 = 200</td>
+                                </tr>
+                                <tr>
+                                    <td>/</td>
+                                    <td>Division</td>
+                                    <td>20 / 10 = 2</td>
+                                </tr>
+                                <tr>
+                                    <td>%</td>
+                                    <td>Modulus</td>
+                                    <td>5 % 2 = 1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
+                
+                <div>
+                    <h3>Comparison Operators</h3>
+                    <p>SQL Comparison Operators test whether two given expressions are the same or not. 
+                        These operators are used in SQL conditional statements while comparing 
+                        one expression with another and they return a Boolean value which can be either TRUE or FALSE. 
+                        The result of an SQL comparison operation can be UNKNOWN when 
+                        one or another operand has it's value as NULL.</p>
+
+                        <table border="1">
+                            <thead>
+                                <tr>
+                                    <th>Operator</th>
+                                    <th>Description</th>
+                                    <th>Example</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>=</td>
+                                    <td>Eqaul to</td>
+                                    <td>5 = 5 returns TRUE</td>
+                                </tr>
+                                <tr>
+                                    <td>!=</td>
+                                    <td>Not equal</td>
+                                    <td>5 != 6 returns TRUE</td>
+                                </tr>
+                                <tr>
+                                    <td><></td>
+                                    <td>Not equal</td>
+                                    <td>5 <> 4 returns TRUE</td>
+                                </tr>
+                                <tr>
+                                    <td>></td>
+                                    <td>Greater than</td>
+                                    <td>4 > 5 returns FALSE</td>
+                                </tr>
+                                <tr>
+                                    <td><</td>
+                                    <td>Less than</td>
+                                    <td>4 < 5 returns TRUE</td>
+                                </tr>
+                                <tr>
+                                    <td>>=</td>
+                                    <td>Greater than or equal to</td>
+                                    <td>4 >= 5 returns FALSE</td>
+                                </tr>
+                                <tr>
+                                    <td><=</td>
+                                    <td>Less than or equal to</td>
+                                    <td>4 <= 5 returns TRUE</td>
+                                </tr>
+                                <tr>
+                                    <td>!<</td>
+                                    <td>Not less than</td>
+                                    <td>4 !< 5 returns FALSE</td>
+                                </tr>
+                                <tr>
+                                    <td>!></td>
+                                    <td>Not greater than</td>
+                                    <td>4 !> 5 returns TRUE</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
+
+                <div>
+                    <h3>Logical Operators</h3>
+                    <p>SQL Logical Operators are very similar to comparison operators and 
+                        they test for the truth of some given condition. <br>These operators 
+                        return a Boolean value which can be either a TRUE or FALSE. 
+                        The result of an SQL logical operation can be UNKNOWN when one or 
+                        another operand has it's value as NULL.</p>
+
+                        <table border="1">
+                            <thead>
+                                <tr>
+                                    <th>Operator</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ALL</td>
+                                    <td>TRUE if all of a set of comparisons are TRUE.</td>
+                                </tr>
+                                <tr>
+                                    <td>AND</td>
+                                    <td>TRUE if all the conditions separated by AND are TRUE.</td>
+                                </tr>
+                                <tr>
+                                    <td>ANY</td>
+                                    <td>TRUE if any one of a set of comparisons are TRUE.</td>
+                                </tr>
+                                <tr>
+                                    <td>BETWEEN</td>
+                                    <td>TRUE if the operand lies within the range of comparisons.</td>
+                                </tr>
+                                <tr>
+                                    <td>EXISTS</td>
+                                    <td>TRUE if the subquery returns one or more records</td>
+                                </tr>
+                                <tr>
+                                    <td>IN</td>
+                                    <td>TRUE if the operand is equal to one of a list of expressions.</td>
+                                </tr>
+                                <tr>
+                                    <td>LIKE</td>
+                                    <td>TRUE if the operand matches a pattern specially with wildcard.</td>
+                                </tr>
+                                <tr>
+                                    <td>NOT</td>
+                                    <td>Reverses the value of any other Boolean operator.</td>
+                                </tr>
+                                <tr>
+                                    <td>OR</td>
+                                    <td>TRUE if any of the conditions separated by OR is TRUE</td>
+                                </tr>
+                                <tr>
+                                    <td>IS NULL</td>
+                                    <td>TRUE if the expression value is NULL.</td>
+                                </tr>
+                                <tr>
+                                    <td>SOME</td>
+                                    <td>TRUE if some of a set of comparisons are TRUE.</td>
+                                </tr>
+                                <tr>
+                                    <td>UNIQUE</td>
+                                    <td>The UNIQUE operator searches every row of a specified table for uniqueness (no duplicates).</td>
+                            </tbody>
+                        </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="rightbar">
+            
+        </div>
+    </div>
+
+</body>
+</html>

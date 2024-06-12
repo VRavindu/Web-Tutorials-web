@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+    <link rel="stylesheet" href="/css/stylesheet.css">
+</head>
+<body>
+    
+    <!-- -----------------------Heading----------------------- -->
+    <div class="heading-bar">
+        <ul>
+            <li><a href="java.html" class="hpg" title="Java">JAVA</a></li>
+            <li><a href="sql.html" class="hpg" title="Sql">SQL</a></li>
+            <li><a href="html.html" class="hpg" title="Html">HTML</a></li>
+            <li><a href="css.html" class="hpg" title="Css" style="color: red;">CSS</a></li>
+            <li><a href="javascript.html" class="hpg" title="JavaScript">JAVASCRIPT</a></li>
+            <li><a href="python.html" class="hpg" title="Python">PYTHON</a></li>
+            <li><a href="c++.html" class="hpg" title="C++">C++</a></li>
+            <li><a href="php.html" class="hpg" title="PHP" >PHP</a></li>
+            <li><a href="/index.html" class="hpg"> HOME</a></li>
+            <img src="/assets/icons/bars.svg" style="width: 25px;">
+        </ul>
+    </div>
+
+    <div class="container" >
+        
+        
+        <div class="table">
+            <h1>What is CSS ?</h1>
+            <hr>
+            <p>CSS, or Cascading Style Sheets, is a coding language used to make 
+                web pages look visually appealing. It determines how HTML elements 
+                are displayed on a webpage, controlling aspects like colors, 
+                fonts, layout, and spacing. In essence, CSS allows 
+                web developers to design and customize the appearance of websites.</p>
+
+            <img src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics/css-declaration-small.png" alt="">
+        
+            <h2>Why to Learn CSS ?</h2>
+            <p>Cascading Style Sheets, fondly referred to as CSS, is a simple design language intended to simplify the process of making web pages presentable.
+
+                CSS is a MUST for students and working professionals to become a great Software Engineer 
+                specially when they are working in Web Development Domain. 
+                I will list down some of the key advantages of learning CSS:</p>
+            <ul>
+                <li><b>Create Stunning Web site -</b> CSS handles the look and feel part of a web page. 
+                    Using CSS, you can control the color of the text, 
+                    the style of fonts, the spacing between paragraphs, how columns 
+                    are sized and laid out, what background images or colors are used, 
+                    layout designs,variations in display for different devices and screen sizes as well as a variety of other effects.</li>
+                <li><b>Become a web designer -</b> If you want to start a carrer as a professional web designer, 
+                    HTML and CSS designing is a must skill.</li>
+                <li><b>Control web - </b> CSS is easy to learn and understand but it provides 
+                    powerful control over the presentation of an HTML document. Most commonly, 
+                    CSS is combined with the markup languages HTML or XHTML.</li>
+                <li><b>Learn other languages -</b> Once you understands the basic of HTML and CSS then other related 
+                    technologies like javascript, php, or angular are become easier to understand.</li>
+            </ul>
+
+            <h2>Applications of CSS</h2>
+            <ul>
+                <li><b>CSS saves time - </b> You can write CSS once and then reuse same sheet in multiple HTML pages. 
+                    You can define a style for each HTML element and apply it to as many Web pages as you want.</li>
+                <li><b>Pages load faster -</b> If you are using CSS, you do not need to write HTML tag attributes every time. 
+                    Just write one CSS rule of a tag and apply it to all the occurrences of that tag. So less code means faster download times.</li>
+                <li><b>Easy maintenance -</b> To make a global change, simply change the style, and all elements in all the web pages will be updated automatically.</li>
+                <li><b>Superior styles to HTML - </b> CSS has a much wider array of attributes than HTML, so you can give a 
+                    far better look to your HTML page in comparison to HTML attributes.</li>
+                <li><b>Multiple Device Compatibility -</b> Style sheets allow content to be optimized for more than one type of device. 
+                    By using the same HTML document, different versions of a website can be presented for handheld
+                     devices such as PDAs and cell phones or for printing.</li>
+                <li><b>Global web standards -</b> Now HTML attributes are being deprecated and it is being recommended to use CSS. 
+                    So its a good idea to start using CSS in all the HTML pages to make them compatible to future browsers.</li>
+            </ul>
+        
+            <h1>CSS Selectors</h1>
+                <hr>
+            <div> 
+                <ul>
+                    <li><b>Element Selector:</b> Targets all instances of a specific HTML element.</li>
+                    <pre>
+                        <code>
+                            p {
+                                /* styles applied to all &lt;p&gt; elements */
+                            }                            
+                        </code>
+                    </pre>
+
+                    <li><b>Class Selector:</b> Targets elements with a specific class attribute.</li>
+                    <pre>
+                        <code>
+                            .classname {
+                                /* styles applied to elements with class="classname" */
+                            }                            
+                        </code>
+                    </pre>
+                    
+                    <li><b>ID Selector:</b> Targets a single element with a specific ID attribute.</li>
+                    <pre>
+                        <code>
+                            #idname {
+                                /* styles applied to element with id="idname" */
+                            }                            
+                        </code>
+                    </pre>
+
+                    <li><b>Attribute Selector:</b> Targets elements based on their attributes.</li>
+                    <pre>
+                        <code>
+                            [attribute="value"] {
+                                /* styles applied to elements with specific attribute values */
+                            }
+                        </code>
+                    </pre>
+
+                    <li><b>Descendant Selector:</b> Targets elements that are descendants of a specific element.</li>
+                    <pre>
+                        <code>
+                            div p {
+                                /* styles applied to all &lt;p&gt; elements that are descendants of &lt;div&gt; elements */
+                            }                            
+                        </code>
+                    </pre>
+
+                    <li><b>Child Selector:</b> Targets elements that are direct children of a specific element.</li>
+                    <pre>
+                        <code>
+                            div > p {
+                                /* styles applied to all &lt;p&gt; elements that are direct children of &lt;div&gt; elements */
+                            }                            
+                        </code>
+                    </pre>
+
+                    <li><b>Pseudo-classes:</b> Targets elements based on their state or position.</li>
+                    <pre>
+                        <code>
+                            a:hover {
+                                /* styles applied to links when hovered over */
+                            }                            
+                        </code>
+                    </pre>
+
+                    <li><b>Pseudo-elements:</b> Targets specific parts of elements.</li>
+                    <pre>
+                        <code>
+                            p::first-line {
+                                /* styles applied to the first line of &lt;p&gt; elements */
+                            }                            
+                        </code>
+                    </pre>
+                </ul>
+            </div>
+    
+            
+        </div>
+
+        <div class="rightbar">
+            
+        </div>
+
+    </div>
+
+
+</body>
+</html>
